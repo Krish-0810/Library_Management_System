@@ -22,5 +22,14 @@ class LibraryTest {
 
     @Test
     void testBorrowBookUnavailable() {
+        Book book = new Book("978-3-16-148410-0", "Clean Code", "Robert C. Martin", 2008);
+        library.addBook(book);
+        assertThrows(Exception.class, () -> {
+            library.borrowBook("978-3-16-148410-0");
+            library.borrowBook("978-3-16-148410-0");
+        });
+    }
+    @Test
+    void testReturnBook() throws Exception {
         
     }
