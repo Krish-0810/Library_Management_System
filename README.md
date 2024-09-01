@@ -32,3 +32,16 @@ This Library Management System project is noteworthy for several reasons:
 1. **Clone the Repository**: Clone this repository to your local machine using the command:
    ```bash
    git clone https://github.com/your-username/library-management-system.git
+   Welcome to the Library Management System
+1. Add Book
+2. Borrow Book
+3. Return Book
+4. View Available Books
+5. Exit
+Please select an option: 1
+Enter ISBN: 978-0134685991
+Enter Title: Effective Java
+Enter Author: Joshua Bloch
+Enter Publication Year: 2018
+Book added successfully.
+
