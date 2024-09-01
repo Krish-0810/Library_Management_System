@@ -19,4 +19,3 @@ class LibraryTest {
         assertTrue(library.getAvailableBooks().contains(book));
     }
 
-    
