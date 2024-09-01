@@ -40,6 +40,12 @@ class LibraryTest {
     }
     @Test
     void testViewAvailableBooks() {
-        
+        Book book1 = new Book("978-3-16-148410-0", "Clean Code", "Robert C. Martin", 2008);
+        Book book2 = new Book("978-0-321-35668-0", "Refactoring", "Martin Fowler", 1999);
+        library.addBook(book1);
+        library.addBook(book2);
+        assertEquals(2, library.getAvailableBooks().size());
+        assertTrue(library.getAvailableBooks().contains(book1));
+        assertTrue(library.getAvailableBooks().contains(book2));
     }
 }
