@@ -31,5 +31,11 @@ class LibraryTest {
     }
     @Test
     void testReturnBook() throws Exception {
-        
+        Book book = new Book("978-3-16-148410-0", "Clean Code", "Robert C. Martin", 2008);
+        library.addBook(book);
+        library.borrowBook("978-3-16-148410-0");
+        library.returnBook("978-3-16-148410-0");
+        assertEquals(1, library.getAvailableBooks().size());
+        assertTrue(library.getAvailableBooks().contains(book))
     }
+        
