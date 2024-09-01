@@ -38,4 +38,8 @@ class LibraryTest {
         assertEquals(1, library.getAvailableBooks().size());
         assertTrue(library.getAvailableBooks().contains(book))
     }
+    @Test
+    void testViewAvailableBooks() {
         
+    }
+}
